@@ -1,113 +1,134 @@
-
-*, :after, :before{
-    box-sizing:border-box;
+*,
+:after,
+:before {
+    box-sizing: border-box;
 }
-body{
-    display:block;
-    margin:0;
+
+body {
+    display: block;
+    margin: 0;
     padding: 0;
     background-color: bisque;
     overflow-wrap: anywhere;
-    
     min-height: 100%;
-    
 }
-main{
-    display:grid;    
-    align-items: center;  
+
+main {
+    display: grid;
+    align-items: center;
     grid-template-columns: 2fr 12fr 3fr;
-    padding: 5px;     
-    gap:50px; 
+    padding: 5px;
+    gap: 50px;
 }
-.left-bar{
-    overflow:auto;
+
+.left-bar {
+    overflow: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0;
-    padding: 0;  
-    flex-grow:1;
-    
+    padding: 0;
+    flex-grow: 1;
     position: sticky;
-    top:5rem;
-    bottom:5rem;
+    top: 5rem;
+    bottom: 5rem;
 }
 
-
-
-
-header{
-    display:grid;  
-    align-items: center;  
-    grid-template-columns: 1fr 1fr 4fr 1fr;   
-    gap:0px;  
+a {
+    text-decoration: none;
+    color: black;
 }
-.centered{
+
+a:hover {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+
+a:active {
+    text-decoration: none;
+    color: blue;
+}
+
+header {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 4fr 1fr;
+    gap: 0px;
+}
+
+.centered {
     align-items: center;
     justify-content: center;
 }
-header> div >h1{
-    margin-left:0;
+
+header>div>h1 {
+    margin-left: 0;
     padding: 0;
 }
-#logo{
+
+#logo {
     grid-column-start: 2;
-    width:10rem;
+    width: 10rem;
     align-items: center;
     justify-content: center;
 }
-#logo>img{
-    width:10rem;
+
+#logo>img {
+    width: 10rem;
     align-items: center;
     justify-content: center;
-    margin:0;    
+    margin: 0;
 }
-iframe{
-    display:block;
+
+iframe {
+    display: block;
     width: 100%;
-   
+
     margin: 50px auto;
     justify-content: center;
     align-items: center;
 }
 
-.page-selector{
+.page-selector {
     margin-top: 40px;
     margin-bottom: 60px;
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
-    gap:20px;
+    gap: 20px;
 }
-.btc{
+
+.btc {
     display: flex;
     gap: 50px;
 }
-.btc>div{
-    
+
+.btc>div {
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to right, rgb(234, 205, 170),rgb(203, 143, 22));
-   
+    background-image: linear-gradient(to right, rgb(234, 205, 170), rgb(203, 143, 22));
+
 }
 
-.btc> div> a{
-    display:inline-block;
+.btc>div>a {
+    display: inline-block;
     text-decoration: none;
     text-align: center;
-    color:rgb(10, 10, 10);
+    color: rgb(10, 10, 10);
     padding: 8px 15px;
     font-size: 24px;
 }
 
-.btc> div> a> span{
+.btc>div>a>span {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-footer{
+
+footer {
     position: fixed;
-    bottom:0;
-    left:0;
+    bottom: 0;
+    left: 0;
     width: 12%;
     min-width: 120px;
     height: 40px;
@@ -118,28 +139,35 @@ footer{
     justify-content: center;
     align-items: center;
     align-items: self-start;
-    z-index:-1;
+    z-index: -1;
 }
 
-@media (max-width: 500px) {     /* always declare the media query as the last rule to be able to overwrite mobile/desktop properties */
-    main, header, #logo, main, .page-selector{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+@media (max-width: 500px) {
+
+    /* always declare the media query as the last rule to be able to overwrite mobile/desktop properties properly*/
+    main,
+    header,
+    #logo,
+    main,
+    .page-selector {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
 
     }
-    .left-bar{
+
+    .left-bar {
         position: relative;
         flex-direction: row;
     }
-    footer{
+
+    footer {
         position: relative;
         width: 100%;
     }
-    iframe{
+
+    iframe {
         width: 100%;
-       
-        
         margin: 50px auto;
     }
-    }
+}
