@@ -80,7 +80,9 @@ header>div>h1 {
     justify-content: center;
     margin: 0;
 }
-
+section{
+    border-bottom: 1px solid black;
+}
 iframe {
     display: block;
     width: 100%;
