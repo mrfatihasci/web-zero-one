@@ -25,17 +25,20 @@
             <!-- display: grid; this will contain 2 divs: 1 is the page content on center and the other sticky display on the left-->
             <aside class="left-bar">
                 <!--the content of these p's will be retrieved from h2 tags section-container via javascript-->
-                
+
             </aside>
             <article class="content">
                 <section id="1" class="intro">
                     <h2>Why this website?</h2>
                     <ul>
                         <li>The best way to learn is to teach</li>
-                        <li>There are thousands of resources related to front end development on the web, I want to remind myself the decent ones.</li>
-                        <li>Anyone who wants to contribute can fork and pull request this repo, so it would be a win-win for us newbies</li>
-                        <li>I do believe the curriculum of front-end bootcamps/courses that are available on the web are somehow in the reverse order to some degree, so why not make it right in my mind
-                             and showcase it? Any pull request is appreciated in advance.</li>
+                        <li>There are thousands of resources related to front end development on the web, I want to
+                            remind myself the decent ones.</li>
+                        <li>Anyone who wants to contribute can fork and pull request this repo, so it would be a win-win
+                            for us newbies</li>
+                        <li>I do believe the curriculum of front-end bootcamps/courses that are available on the web are
+                            somehow in the reverse order to some degree, so why not make it right in my mind
+                            and showcase it? Any pull request is appreciated in advance.</li>
                     </ul>
                     <p>Let's get statrted!</p>
                 </section>
@@ -45,7 +48,7 @@
                     <ul>
                         <li>Operating System:
                             <ul>
-                                <li>*Linux(Ubuntu)</li>
+                                <li>*Linux(dual boot - Ubuntu alongside Windows11)</li>
                                 <li>Mac OS</li>
                                 <li>Windows</li>
                             </ul>
@@ -70,57 +73,99 @@
                 </section>
                 <section id="3" class="">
                     <h2>Html Elements</h2>
-                    <p>Most programming languages(python, c++, java) require a compiler to compile your "source code", however you dont need a compiler to run your HTML CSS JAVASCRIPT codes. 
+                    <p>Most programming languages(python, c++, java) require a compiler to compile your "source code",
+                        however you dont need a compiler to run your HTML CSS JAVASCRIPT codes.
                         Create a folder and open it in vscode. Create a file in that folder and name it index.html.
-                        One good shortcut worth knowing is just writing "!" in html file and press enter. The foundational structure of html seen below pops up(works only in vs code).
+                        One good shortcut worth knowing is just writing "!" in html file and press enter. The
+                        foundational structure of html seen below pops up(works only in vs code).
                     </p>
-    
-                    <iframe style="border: 1px solid #999;width: 100%; height: 900px" src="https://embed.plnkr.co/github/mrfatihasci/front-end-website/sources/html-basic-structure/main" frameborder="0" allowfullscreen="allowfullscreen"> Loading plunk...</iframe>
-                    
-                    <p>Read about html elements on the web, some links are:
-                        <a></a>
-                        <a></a>
-                    </p>
-                    <p>Add an h1 element with a random text in it. Save the file and in your pc right click index.html, open it in the broser. That's it. This is a website that is not served, but no big difference!</p>
 
-                        
+                    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="yLZvNYJ" data-user="mrfatihasci" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                        <span>See the Pen <a href="https://codepen.io/mrfatihasci/pen/yLZvNYJ">
+                        basic-html-structure-with-added-p-tag</a> by fatih asci (<a href="https://codepen.io/mrfatihasci">@mrfatihasci</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                      </p>
+                      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                    
+
+                    <p>Read about html elements on the web, one notable source is <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">mdn web docs</a>.
+                    </p>
+                    <p>Add an h1 element with a random text in it. Save the file and in your pc right click index.html,
+                        open it in the broser. That's it. This is a website that is not served, but no big difference!
+                    </p>
                 </section>
                 <section id="4" class="">
                     <h2>GitHub</h2>
-                    <p>...</p>
-                    <h3>Setup</h3>
-                    <p>...</p>
-                    <h3>Working in a repo</h3>
-                    <p>...</p>
-                    <h3>Branching</h3>
-                    <ul>
-                        <li>
-
-                        
-                            <ol>
-                                <li>git branch ------- // see current branches.</li>
-                                <li>git branch branch_name ---------- // create a develop branch named branch_name.</li>
-                                <li>git checkout branch_name --------- // change(checkout) to branch_name.</li>
-                                <li>git checkout -b branch_name -------- // use #2 and #3 in a single command.</li>
-                                <li>git push origin branch_name -------- // push branch & now u can see this branch in GitHub repo(after add & commit).</li>
-                            </ol>
+                    <p>Refer to <a target="_blank" rel="noopener" href="https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control"><b>this book</b></a> for any further git and github related questions.</p>
+                    <ol>
+                        <li>Setup
+                            <ul>
+                                <li>sudo add-apt-repository ppa:git-core/ppa</li>
+                                <li>sudo apt update</li>
+                                <li>sudo apt install git</li>
+                                <li>git --version // see if installed</li>
+                            </ul>
+                        </li><br>
+                        <li>Settings
+                            <ul>
+                                <li>git config --global user.name "Your Name"</li>
+                                <li>git config --global user.email "yourname@example.com"</li>
+                                <li>git config --global init.defaultBranch main //setting default branch as main since
+                                    new repos in github has default branch as main instead of master </li>
+                                <li></li>
+                                <li>Next, google how to create ssh key, how to link ssh key to your github account by
+                                    yourself</li>
+                            </ul>
                         </li>
                         <br>
-                        <li>
-                            <ol>
-                                <li>git merge branch_name -------- // take all commited changes in branch_name & add to the branch <b>you are currently on</b>. </li>
-                                <li>git push origin main -------- // push branch(main / master ).</li>
-                            </ol>
+                        <li>Working in a repo
+                            <p>...</p>
                         </li>
                         <br>
-                        <li>
+                        <li>Branching
+                            <ul>
+                                <li> creating & pushing branch
+                                    <ul>
+                                        <li>git branch ------- // see current branches.</li>
+                                        <li>git branch branch_name ---------- // create a develop branch named
+                                            branch_name.</li>
+                                        <li>git checkout branch_name --------- // change(checkout) to branch_name.</li>
+                                        <li>git checkout -b branch_name -------- // use #2 and #3 in a single command.
+                                        </li>
+                                        <li>git push origin branch_name -------- // push branch & now u can see this
+                                            branch in GitHub repo(after add & commit).</li>
+                                    </ul>
+                                </li>
+                                <br>
+                                <li> merging branches
+                                    <ul>
+                                        <li>git merge branch_name -------- // take all commited changes in branch_name &
+                                            add to the branch <b>you are currently on</b>. </li>
+                                        <li>git push origin main -------- // push branch(main / master ).</li>
+                                    </ul>
+                                </li>
+                                <br>
+                                <li> deleting unnecessary merged/unmerged branches
+                                    <ul>
+                                        <li>git branch -d branch_name ----------- // delete branch_name <b>from your
+                                                local repo</b> if it is merged.</li>
+                                        <li>git branch -D branch_name ------------ // delete branch_name <b>from your
+                                                local repo</b> if it is not merged.</li>
+                                        <li>git push origin --delete branch_name ---------- // delete branch_name
+                                            <b>from your remote repo</b>.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><br>
+                        <li>Undo Add/Commit when not pushed
                             <ol>
-                                <li>git branch -d branch_name ----------- // delete branch_name <b>from your local repo</b> if it is merged.</li>
-                                <li>git branch -D branch_name ------------ // delete branch_name <b>from your local repo</b> if it is not merged.</li>
-                                <li>git push origin --delete branch_name ---------- // delete branch_name <b>from your remote repo</b>.</li>
+                                <li>git reset --soft HEAD1 ----------- // does uncommit the last 1 commit yet does not
+                                    unstage (u can unstage changes by following "git status"s instruction).</li>
+                                <li>git reset --mixed HEAD1 ------------ // ..</li>
+                                <li>git reset --hard HEAD1 ---------- // ..</li>
                             </ol>
                         </li>
-                    </ul>
+                    </ol>
                 </section>
                 <section id="5" class="">
                     <h2>Css and Html</h2>
