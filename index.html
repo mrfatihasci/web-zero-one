@@ -16,10 +16,11 @@
     </nav>
     <div class="page-container">
         <header>
-            <div id="logo"><img src="./1.png" alt="logo" /></div>
+            <div></div>
             <div class="centered">
-                <h1>Front End Web Development</h1>
+                <h1>Front End Web Development</h1><img id="logo" src="./1.png" alt="logo" />
             </div>
+           <div></div>
         </header>
         <main>
             <!-- display: grid; this will contain 2 divs: 1 is the page content on center and the other sticky display on the left-->
@@ -29,7 +30,7 @@
             </aside>
             <article class="content">
                 <section id="1" class="intro">
-                    <h2>Why this website?</h2>
+                    <h2>Introduction</h2>
                     <ul>
                         <li>The best way to learn is to teach</li>
                         <li>There are thousands of resources related to front end development on the web, I want to
@@ -38,32 +39,33 @@
                             for us newbies</li>
                         <li>I do believe the curriculum of front-end bootcamps/courses that are available on the web are
                             somehow in the reverse order to some degree, so why not make it right in my mind
-                            and showcase it? Any pull request is appreciated in advance.</li>
+                            and showcase it?</li>
+                        <li>Any pull request is appreciated.</li>
                     </ul>
-                    <p>Let's get statrted!</p>
+                    <p>So we have this website.</p>
                 </section>
                 <section id="2" class="">
                     <h2>OS, Browser, Text Editor</h2>
-                    <p>The ones i prefer is marked with an * asterisk, everyone has a different taste though.</p>
+                    <p>The ones i prefer is marked with an * asterisk.</p>
                     <ul>
-                        <li>Operating System:
+                        <li><b>Operating System:</b>
                             <ul>
-                                <li>*Linux(dual boot - Ubuntu alongside Windows11)</li>
+                                <li>* Linux (dual boot - Ubuntu alongside Windows11)</li>
                                 <li>Mac OS</li>
                                 <li>Windows</li>
                             </ul>
                         </li>
-                        <li>Browser:
+                        <li><b>Browser:</b>
                             <ul>
-                                <li>*Google Chrome</li>
+                                <li>* Google Chrome</li>
                                 <li>Firefox</li>
                                 <li>Safari</li>
                                 <li>Microsoft Edge</li>
                             </ul>
                         </li>
-                        <li>Text Editor:
+                        <li><b>Text Editor:</b>
                             <ul>
-                                <li>*Visual Studio Code</li>
+                                <li>* Visual Studio Code</li>
                                 <li>Sublime Text</li>
                                 <li>Notepad</li>
                                 <li>Text Editor</li>
@@ -96,17 +98,16 @@
                 </section>
                 <section id="4" class="">
                     <h2>GitHub</h2>
-                    <p>Refer to <a target="_blank" rel="noopener" href="https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control"><b>this book</b></a> for any further git and github related questions.</p>
                     <ol>
-                        <li>Setup
+                        <li><b>Setup</b>
                             <ul>
                                 <li>sudo add-apt-repository ppa:git-core/ppa</li>
                                 <li>sudo apt update</li>
                                 <li>sudo apt install git</li>
                                 <li>git --version // see if installed</li>
                             </ul>
-                        </li><br>
-                        <li>Settings
+                        </li>
+                        <li><b>Settings</b>
                             <ul>
                                 <li>git config --global user.name "Your Name"</li>
                                 <li>git config --global user.email "yourname@example.com"</li>
@@ -117,12 +118,15 @@
                                     yourself</li>
                             </ul>
                         </li>
-                        <br>
-                        <li>Working in a repo
-                            <p>...</p>
+                        <li><b>Working in a repo</b>
+                            <ul>
+                                <li>git clone 'SSH key'    //insert your SSH key from remote github repo which is something like: git@github.com:{your_username}/{repo_name}</li>
+                                <li>git add                   //stage changes you have made</li>
+                                <li>git commit -m "fsdfsdfsdf"    // write a commit message in the dummy text</li>
+                                <li>git push      // git push origin main   //   git push origin branch_name</li>
+                            </ul>
                         </li>
-                        <br>
-                        <li>Branching
+                        <li><b>Branching</b>
                             <ul>
                                 <li> creating & pushing branch
                                     <ul>
@@ -136,7 +140,6 @@
                                             branch in GitHub repo(after add & commit).</li>
                                     </ul>
                                 </li>
-                                <br>
                                 <li> merging branches
                                     <ul>
                                         <li>git merge branch_name -------- // take all commited changes in branch_name &
@@ -144,7 +147,6 @@
                                         <li>git push origin main -------- // push branch(main / master ).</li>
                                     </ul>
                                 </li>
-                                <br>
                                 <li> deleting unnecessary merged/unmerged branches
                                     <ul>
                                         <li>git branch -d branch_name ----------- // delete branch_name <b>from your
@@ -156,8 +158,8 @@
                                     </ul>
                                 </li>
                             </ul>
-                        </li><br>
-                        <li>Undo Add/Commit when not pushed
+                        </li>
+                        <li><b>Undo Add/Commit when not pushed</b>
                             <ol>
                                 <li>git reset --soft HEAD1 ----------- // does uncommit the last 1 commit yet does not
                                     unstage (u can unstage changes by following "git status"s instruction).</li>
@@ -166,9 +168,10 @@
                             </ol>
                         </li>
                     </ol>
+                    <p>You can refer to <a target="_blank" rel="noopener" href="https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control"><b>this book</b></a> for any further git and github related questions.</p>
                 </section>
                 <section id="5" class="">
-                    <h2>Css and Html</h2>
+                    <h2>Html, Css, Javascript</h2>
                     <p>.....</p>
                 </section>
             </article>
@@ -185,7 +188,7 @@
         </div>
         <div></div>
     </div>
-    <footer class="footer">
+    <footer class="footer centered">
         <p>Mr Fatih Asci</p>
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

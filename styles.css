@@ -1,22 +1,18 @@
-*,
-:after,
-:before {
+*, :after, :before {
     box-sizing: border-box;
 }
 
 body {
-    display: block;
     margin: 0;
     padding: 0;
     background-color: bisque;
     overflow-wrap: anywhere;
-    min-height: 100%;
 }
 
 main {
     display: grid;
     align-items: center;
-    grid-template-columns: 2fr 12fr 3fr;
+    grid-template-columns: 3fr 6fr 3fr;
     padding: 5px;
     gap: 50px;
 }
@@ -26,12 +22,11 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0;
-    padding: 0;
     flex-grow: 1;
     position: sticky;
     top: 5rem;
     bottom: 5rem;
+    margin-left: 4%;
 }
 
 a {
@@ -40,76 +35,52 @@ a {
 }
 
 a:hover {
-    text-decoration: none;
     color: black;
     background-color: white;
 }
 
 a:active {
-    text-decoration: none;
     color: blue;
 }
 
 header {
     display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr 4fr 1fr;
-    gap: 0px;
+    grid-template-columns: 3fr 6fr 3fr;
+    gap: 50px;
 }
 
 .centered {
-    align-items: center;
-    justify-content: center;
-}
-
-header>div>h1 {
-    margin-left: 0;
-    padding: 0;
+    text-align: center;
 }
 
 #logo {
-    grid-column-start: 2;
-    width: 10rem;
-    align-items: center;
-    justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8rem;
 }
 
-#logo>img {
-    width: 10rem;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-}
 section{
     border-bottom: 1px solid black;
-}
-iframe {
-    display: block;
-    width: 100%;
-
-    margin: 50px auto;
-    justify-content: center;
-    align-items: center;
 }
 
 .page-selector {
     margin-top: 40px;
     margin-bottom: 60px;
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
-    gap: 20px;
+    grid-template-columns: 3fr 6fr 3fr;
+    gap: 50px;
 }
 
 .btc {
     display: flex;
     gap: 50px;
+    justify-content: center;
 }
 
 .btc>div {
     justify-content: center;
-    align-items: center;
     background-image: linear-gradient(to right, rgb(234, 205, 170), rgb(203, 143, 22));
-
 }
 
 .btc>div>a {
@@ -124,7 +95,6 @@ iframe {
 .btc>div>a>span {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 footer {
@@ -137,39 +107,27 @@ footer {
     font-size: 14px;
     background-color: bisque;
     color: black;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    align-items: self-start;
     z-index: -1;
 }
 
 @media (max-width: 500px) {
-
-    /* always declare the media query as the last rule to be able to overwrite mobile/desktop properties properly*/
-    main,
-    header,
-    #logo,
-    main,
-    .page-selector {
+    
+    main, header, .page-selector {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-
+        gap:0;
     }
 
     .left-bar {
         position: relative;
-        flex-direction: row;
+        top:0;
+        bottom:0;
+        margin-left: 10%;
     }
 
     footer {
         position: relative;
         width: 100%;
-    }
-
-    iframe {
-        width: 100%;
-        margin: 50px auto;
     }
 }
