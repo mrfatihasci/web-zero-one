@@ -5,14 +5,20 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: bisque;
+    font-family: 'Lato', sans-serif;
+    font-size: large;
+    line-height: 30px;
+    background-color: whitesmoke;
     overflow-wrap: anywhere;
+}
+p, h2, h3, h4{
+    padding-left: 1rem;
 }
 
 main {
     display: grid;
     align-items: center;
-    grid-template-columns: 3fr 6fr 3fr;
+    grid-template-columns: 3fr 7fr 3fr;
     padding: 5px;
     gap: 50px;
 }
@@ -27,29 +33,31 @@ main {
     top: 5rem;
     bottom: 5rem;
     margin-left: 4%;
+    margin-right: 30%;
+    padding-right: 4%;
+    text-align: right;
+    border-right: 2px solid lightskyblue;
 }
-
-a {
+a{
     text-decoration: none;
+}
+.left-bar> a {
     color: black;
 }
 
 a:hover {
-    color: black;
-    background-color: white;
+    background-color: lightskyblue;
 }
 
-a:active {
-    color: blue;
-}
+
 
 header {
     display: grid;
-    grid-template-columns: 3fr 6fr 3fr;
+    grid-template-columns: 3fr 7fr 3fr;
     gap: 50px;
 }
 
-.centered {
+.centered{
     text-align: center;
 }
 
@@ -61,14 +69,15 @@ header {
 }
 
 section{
-    border-bottom: 1px solid black;
+    padding: 1rem 0.5rem;
+    border-bottom: 2px solid lightskyblue;
 }
 
 .page-selector {
     margin-top: 40px;
     margin-bottom: 60px;
     display: grid;
-    grid-template-columns: 3fr 6fr 3fr;
+    grid-template-columns: 3fr 7fr 3fr;
     gap: 50px;
 }
 
@@ -80,16 +89,16 @@ section{
 
 .btc>div {
     justify-content: center;
-    background-image: linear-gradient(to right, rgb(234, 205, 170), rgb(203, 143, 22));
+    background-image: linear-gradient(to right, lightskyblue, rgb(219, 182, 182));
+    border: 0.5px dotted black;
 }
 
 .btc>div>a {
     display: inline-block;
-    text-decoration: none;
     text-align: center;
-    color: rgb(10, 10, 10);
+    color: black;
     padding: 8px 15px;
-    font-size: 24px;
+    font-size: 26px;
 }
 
 .btc>div>a>span {
@@ -101,11 +110,10 @@ footer {
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 12%;
+    width: 18%;
     min-width: 120px;
-    height: 40px;
-    font-size: 14px;
-    background-color: bisque;
+    font-size: 16px;
+    background-color: whitesmoke;
     color: black;
     z-index: -1;
 }
@@ -123,7 +131,9 @@ footer {
         position: relative;
         top:0;
         bottom:0;
-        margin-left: 10%;
+        margin: 0;
+        border: 0;
+        text-align: center;
     }
 
     footer {
