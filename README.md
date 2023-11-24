@@ -1,1 +1,1 @@
-<p>The website is live at <a href="https://mrfatihasci.github.io/front-end-website/">https://mrfatihasci.github.io/front-end-website/</a></p>
+<p>The website is live at <a href="https://mrfatihasci.github.io/front-end-website/" target="_blank" rel="noopener">https://mrfatihasci.github.io/front-end-website/</a></p>
