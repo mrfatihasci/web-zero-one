@@ -3,7 +3,7 @@
 However this javascript.js file is not necessary now, i wanted to add it in the hope to have a text editor like version in which the users will write their h2 tags and save without writing the left-bar content.
 And it still saves time though.
 */
-
+alert("I have not made my mind on whether to develope this website as current layout or completely change layout with an included toggle that will help user slide between sections");
 const leftBarHeadings = document.querySelector('.content');
 const leftBar = document.querySelector('.left-bar');
 var headings= leftBarHeadings.getElementsByTagName('section');
@@ -15,3 +15,4 @@ for(let i=0; i<=nuOfHeadings; i++){
     anchor.href=`#${i+1}`;
     leftBar.appendChild(anchor);
 }
+

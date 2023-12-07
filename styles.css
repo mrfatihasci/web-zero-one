@@ -125,7 +125,7 @@ td, th{
     margin:0;
 }
 
-.iframe-container, .svg-container{
+.iframe-container{
     position:relative;
     width:100%;
     height: 0;
@@ -133,12 +133,43 @@ td, th{
     
 }
 
-.iframe-container iframe, .svg-container svg{
+.iframe-container iframe{
     position: absolute;
     top:0;
     left:0;
     width: 100%;
     height:100%;
+}
+
+.svg-container{
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.svg-container svg{
+    max-width: 30%;
+    max-height:560px;
+}
+.right-box{
+    max-width: 70%;
+    font-size:18px;
+    line-height: 14px;
+}
+#path1:hover{
+    fill: yellow;
+    transition: fill 0.5s ease-out 0.1s;
+}
+
+#rect3:hover{
+    fill: yellow;
+    transition: fill 0.5s ease-out 0.1s;
+}
+
+#rect1:hover{
+    fill:yellow;
+    transition: fill 0.5s ease-out 0.1s;
 }
 
 .page-selector {
@@ -218,18 +249,4 @@ footer {
         position: relative;
         width: 100%;
     }
-}
-
-/*  all this css manipulation below is temporary, it will be done with javascript.  */
-#path1, #rect3, #rect1{    
-    fill:red;
-}
-#path1:hover{
-    fill:yellow;
-}
-#rect3:hover{
-    fill:yellow;
-}
-#rect1:hover{
-    fill-opacity: 0;
 }
