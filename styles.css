@@ -12,7 +12,7 @@ body {
     overflow-wrap: anywhere;
 }
 
-p, h2, h3, h4{
+p, h1, h2, h3, h4{
     padding-left: 1rem;
 }
 .navbar{
@@ -24,9 +24,8 @@ p, h2, h3, h4{
 .icons{
     height:4rem;
     display: flex;
-    justify-content:center;
+    justify-content:space-evenly;
     align-items: center;
-    gap: 3rem;
 }
 #icons-left{
     display: flex;
@@ -44,7 +43,6 @@ p, h2, h3, h4{
     text-decoration: none;
     color:black;
     font-size:3rem;
-   
 }
 
 
@@ -87,29 +85,18 @@ a:hover {
     background-color: lightskyblue;
 }
 
-section a{
+article a{
     text-decoration: underline;
     text-decoration-thickness: 2px;
 }
 
-header {
-    display: grid;
-    grid-template-columns: 4fr 10fr 3fr;
-    gap: 50px;
-}
 
 .centered{
     text-align: center;
 }
 
-#logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 8rem;
-}
 
-section{
+article{
     padding: 1rem 0;
     border-bottom: 2px solid lightskyblue;
 }
@@ -130,7 +117,9 @@ td, th{
     width:100%;
     height: 0;
     padding-bottom: 56.25%;
-    
+    width:100%;
+    overflow:hidden;
+    height:200px;
 }
 
 .iframe-container iframe{
@@ -139,6 +128,13 @@ td, th{
     left:0;
     width: 100%;
     height:100%;
+    overflow:scroll;
+    border:0;
+    background-color: transparent;
+}
+.codepen{
+    border: 0;
+    
 }
 
 .svg-container{
@@ -211,24 +207,35 @@ footer {
     left: 0;
     width: 18%;
     min-width: 120px;
-    
     background-color: whitesmoke;
     color: black;
     z-index: -1;
 }
 
 @media (max-width: 900px){
+    html{
+        font-size: medium;
+    }
     main, header, .page-selector{
         grid-template-columns: 4fr 10fr 0;
     }
-
     .left-bar{
         margin:0;
+    }
+    #icons-left, #icons-right{
+        gap: 2rem;
+        padding: 0, 25px;
+    }
+    .btc>div>a {
+        padding: 6px 12px;
+        
+    }
+    .btc-text{
+        font-size: 22px;
     }
 }
 
 @media (max-width: 500px) {
-    
     main, header, .page-selector {
         display: flex;
         flex-wrap: wrap;
@@ -248,5 +255,16 @@ footer {
     footer {
         position: relative;
         width: 100%;
+    }
+ 
+    #icons-left, #icons-right{
+        gap: 1rem;
+        padding: 0 10px;
+    }
+    .btc>div>a {
+        padding: 3px 7px;
+    }
+    .btc-text{
+        font-size: 18px;
     }
 }
